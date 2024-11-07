@@ -10,14 +10,72 @@
       .bg-light{
         transition: all 1s ease;
       }
+      
       header{
-        margin-bottom: 100px;
+        margin-bottom: 150px;
       }
+
+      h1 { 
+    text-align: center; 
+    color: #a8a8a8; 
+} 
+form { 
+    max-width: 600px; 
+    text-align: center; 
+    margin: 20px auto; 
+} 
+input, textarea { 
+    border: 0; 
+    outline: 0; 
+    padding: 1em; 
+    border-radius: 8px; 
+    display: block; 
+    width: 100%; 
+    margin-top: 1em; 
+    font-family: 'Merriweather', sans-serif; 
+    resize: none; 
+} 
+#input-submit { 
+    color: white; 
+    background: darkslategray; 
+    cursor: pointer; 
+} 
+#input-submit:hover { 
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2); 
+} 
+textarea { 
+    height: 126px; 
+} 
+.half { 
+    float: left; 
+    width: 48%; 
+    margin-bottom: 1em; 
+} 
+.right { 
+    width: 50%; 
+} 
+.left { 
+    margin-right: 2%; 
+} 
+@media (max-width: 480px) { 
+    .half { 
+        width: 100%; 
+        float: none; 
+        margin-bottom: 0; } 
+    } 
+    .cf:before, .cf:after { 
+        content: ' '; 
+        display: table; 
+    } 
+    .cf:after { 
+        clear: both; 
+    }
+      
     </style>
 </head>
 <body>
   <header>
-    <nav id="barra" class="navbar navbar-expand-sm navbar-light fixed-top bg-light">
+    <nav id="barra" class="navbar navbar-expand-sm navbar-light fixed-top bg-light border border-2">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="/Iconos/Logo.png" alt="ASDIZ">
@@ -44,106 +102,25 @@
     </nav>
   </header>
 
-  <div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="max-height: 600px">
-          <img src="/Imagenes/carrusel4.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" style="max-height: 600px">
-          <img src="/Imagenes/carrusel2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" style="max-height: 600px">
-          <img src="/Imagenes/carrusel3.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+  <!--service_fqydlg8 nombre de servicio para correo-->
+
+  <div class="content border-2">
+    <div class="content">
+      <div> 
+        <h1 class="text-dark">Contacto</h1> 
+        <form className='cf'> 
+            <div className='half left cf'> 
+                <input class="border" type='text' placeholder='Nombre' name='user_name' /> 
+                <input class="border" type='email' placeholder='Email' name='user_email' /> 
+            </div> 
+            <div className='half right cf'> 
+                <textarea class="border border-3" name='mensaje' type='text' placeholder='Escriba su solicitud, le responderemos a la brevedad'></textarea> 
+            </div> 
+            <input class="bg-dark" type='submit' value='Enviar' id='input-submit' /> 
+        </form> 
+    </div>
     </div>
   </div>
-      
-
-      <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card border-0 justify-content-center p-2"> 
-                    <img src="/Imagenes/carrusel1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Asesoría Financiera</h5>
-                      <p class="card-text" style="font-size: 0.9rem">Controle los ingresos, costos, activos, pasivos y patrimonio con diversas estratégias financieras.</p>
-                      <a href="/Secciones/asesorfinanzas.html" class="btn btn-primary">Detalle</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-0 justify-content-center p-2">
-                    <img src="/Imagenes/Carrusel2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Gestión por Procesos</h5>
-                      <p class="card-text" style="font-size: 0.9rem">Optimice las actividades de su negocio optimizando la gestión por procesos.</p>
-                      <a href="/Secciones/gestprocesos.html" class="btn btn-primary">Detalle</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-0 justify-content-center p-2">
-                    <img src="/Imagenes/Carrusel3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Inteligencia de Negocio</h5>
-                      <p class="card-text" style="font-size: 0.9rem">Implementar estrategias de Business Intelligence para obtener una ventaja competitiva.</p>
-                      <a href="/Secciones/intelnegocio.html" class="btn btn-primary">Detalle</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-      </div>
-
-      <!--Agregando cards horizontales-->
-      <div class="container mt-5 mb-5 bg-dark">
-        <div class="row m-3">
-          <div class="card border-0 mt-3">
-            <div class="row g-0">
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Tomar Decisiones Informadas</h5>
-                  <p class="card-text">Con la asesoría financiera elaboraremos estrategias para mejorar la producción, optimizar costos y con ello incrementar los ratios de rentabilidad, analizando los estados financieros.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <img src="/Imagenes/PanelH1.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-            </div>
-          </div>          
-        </div>
-        <div class="row m-3">
-          <div class="card border-0 mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="/Imagenes/PanelH2.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Acompañamiento a Directivos</h5>
-                  <p class="card-text">Acompañamos en el cumplimiento de los resultados a los puestos directivos como directores, gerentes, jefes y suoervisores, aplicando estrategias a todo nivel.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>          
-        </div>
-      </div>
       
       <!--Agregando el footer-->
       <footer>
@@ -213,7 +190,7 @@
     <!--Agregar cambio a navbar-->
     <script>
       $(window).scroll(function() {
-        if($("#barra").offset().top > 200) {
+        if($("#barra").offset().top > 50) {
           $("#barra").addClass("bg-dark");
           $("#txtNav").addClass("text-light");
           $("#txtNav2").addClass("text-light");

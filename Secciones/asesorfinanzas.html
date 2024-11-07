@@ -11,7 +11,7 @@
         transition: all 1s ease;
       }
       header{
-        margin-bottom: 100px;
+        margin-bottom: 150px;
       }
     </style>
 </head>
@@ -44,33 +44,15 @@
     </nav>
   </header>
 
-  <div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div class="container">
+    <div class="container">
+      <div class="mt-5">
+        <h1 class="mt-5 text-center">Asesoría Financiera</h1>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="max-height: 600px">
-          <img src="/Imagenes/carrusel4.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" style="max-height: 600px">
-          <img src="/Imagenes/carrusel2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" style="max-height: 600px">
-          <img src="/Imagenes/carrusel3.jpg" class="d-block w-100" alt="...">
-        </div>
+      <div>
+        <p class="mt-2">Somos un grupo de especialistas en asesoría a empresas en finanzas corporativas y ponemos a tu disposición nuestros servicios</p>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </div>    
   </div>
       
 
@@ -213,7 +195,7 @@
     <!--Agregar cambio a navbar-->
     <script>
       $(window).scroll(function() {
-        if($("#barra").offset().top > 200) {
+        if($("#barra").offset().top > 50) {
           $("#barra").addClass("bg-dark");
           $("#txtNav").addClass("text-light");
           $("#txtNav2").addClass("text-light");

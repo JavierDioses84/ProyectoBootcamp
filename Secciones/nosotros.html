@@ -11,7 +11,7 @@
         transition: all 1s ease;
       }
       header{
-        margin-bottom: 100px;
+        margin-bottom: 150px;
       }
     </style>
 </head>
@@ -44,70 +44,38 @@
     </nav>
   </header>
 
-  <div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div class="container">
+    <div class="container">
+      <div class="mt-5">
+        <h1 class="mt-5">Nosotros</h1>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="max-height: 600px">
-          <img src="/Imagenes/carrusel4.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" style="max-height: 600px">
-          <img src="/Imagenes/carrusel2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" style="max-height: 600px">
-          <img src="/Imagenes/carrusel3.jpg" class="d-block w-100" alt="...">
-        </div>
+      <div>
+        <p>Somos un grupo de especialistas en asesoría a empresas en diversos niveles de jerarquía, desde CEOs, directores, gerentes, jefes y supervisores, para orientarlos en la consecusión de sus resultados de negocio y el crecimiento del mismo</p>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </div>    
   </div>
-      
 
-      <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card border-0 justify-content-center p-2"> 
-                    <img src="/Imagenes/carrusel1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Asesoría Financiera</h5>
-                      <p class="card-text" style="font-size: 0.9rem">Controle los ingresos, costos, activos, pasivos y patrimonio con diversas estratégias financieras.</p>
-                      <a href="/Secciones/asesorfinanzas.html" class="btn btn-primary">Detalle</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-0 justify-content-center p-2">
-                    <img src="/Imagenes/Carrusel2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Gestión por Procesos</h5>
-                      <p class="card-text" style="font-size: 0.9rem">Optimice las actividades de su negocio optimizando la gestión por procesos.</p>
-                      <a href="/Secciones/gestprocesos.html" class="btn btn-primary">Detalle</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-0 justify-content-center p-2">
-                    <img src="/Imagenes/Carrusel3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Inteligencia de Negocio</h5>
-                      <p class="card-text" style="font-size: 0.9rem">Implementar estrategias de Business Intelligence para obtener una ventaja competitiva.</p>
-                      <a href="/Secciones/intelnegocio.html" class="btn btn-primary">Detalle</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="container">
+      <div class="mt-5">
+        <h1 class="mt-5">Misión</h1>
       </div>
+      <div>
+        <p>Ayudar a las empresas a desarrollarse en el mundo corporativo, facilitando estrategias de negocio</p>
+      </div>
+    </div>    
+  </div>
+  
+  <div class="container">
+    <div class="container">
+      <div class="mt-5">
+        <h1 class="mt-5">Visión</h1>
+      </div>
+      <div>
+        <p>Ser lideres en el negocio de la consultoria, creciendo y expandiendonos junto con nuestros clientes</p>
+      </div>
+    </div>    
+  </div>
 
       <!--Agregando cards horizontales-->
       <div class="container mt-5 mb-5 bg-dark">
@@ -213,7 +181,7 @@
     <!--Agregar cambio a navbar-->
     <script>
       $(window).scroll(function() {
-        if($("#barra").offset().top > 200) {
+        if($("#barra").offset().top > 10) {
           $("#barra").addClass("bg-dark");
           $("#txtNav").addClass("text-light");
           $("#txtNav2").addClass("text-light");
